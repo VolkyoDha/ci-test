@@ -106,8 +106,8 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP}}
-          heroku_email: ${{secrets.HEROKU_API_EMAIL}}
-          healthcheck: "https://${{secrets.HEROKU_APP}}.herokuapp.com/health"
+          heroku_api_key: HRKU-3e5b5d48-e5c9-4e8e-b564-97d453a19a99
+          heroku_app_name: citest
+          heroku_email: clobodiaz@outlook.com
+          healthcheck: "https://citest-c05b3021aac5.herokuapp.com/"
           rollbackonhealthcheckfailed: true
